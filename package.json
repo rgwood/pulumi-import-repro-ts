@@ -1,0 +1,20 @@
+{
+    "name": "pulumi-import-repro-ts",
+    "main": "bin/index.js",
+    "typings": "bin/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "build-deploy": "tsc && pulumi update"
+    },
+    "devDependencies": {
+        "typescript": "^2.7.2",
+        "@types/node": "latest"
+    },
+    "dependencies": {
+        "@pulumi/cloud": "^0.14.0",
+        "@pulumi/cloud-aws": "^0.14.0",
+        "@pulumi/pulumi": "latest",
+        "qs": "^6.5.2",
+        "uuid": "^3.2.1"
+    }
+}
